@@ -5,29 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      margin:0px;
+      border:0px;
+      background-color: hsl(217, 54%, 11%);
+    }
+    .principal{
+      width: 250px;
+      height: 465px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      padding: 20px;
+      background-color: hsl(216, 50%, 16%);
+
+    
+    }
+
+    
+    .imagen{
+      width: 250px;
+      height: 250px;
+      border-radius: 10px;
+    }
+
+    .letra1{
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color:hsl(0, 0%, 100%);
+
+    }
+    .letra2{
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color:hsl(215, 25%, 58%);
+    }
+    .textos{
+      display: flex;
+    }
+    .textos_contenido1{
+      display: flex;
+      width: 67%;
+    }
+    .textos_contenido1_letra1{
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color:hsl(178, 100%, 50%);
+    }
+
+    .textos_contenido2{
+      display: flex;
+      width: 33%;
+    }
+    .textos_contenido2_letra2{
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color:hsl(215, 25%, 58%);
+     
+     }
+     
+    .letra3{
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      color:hsl(215, 25%, 58%);
+    }
+    svg{
+      padding-top: 13px;
+      padding-right: 5px;
+
+    }
+    hr{
+      height: 1px;
+      margin: 5px;
+      border: 0ch;
+      border-bottom: 1px solid rgb(190, 184, 184);
+    }
+
+    .creador{
+      display: flex;
+    }
+    .avatar{
+      margin-top:10px ;
+      margin-right:10px ;
+      width: 30px;
+      height: 30px;
+      border-radius: 19px;
+      border: 1px solid #fff;
+    }
+    label{
+      color:#fff
+    }
+     
+
+ 
+
+
   </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="principal">
+    <img class="imagen"src="../images/image-equilibrium.jpg">
+    <p class="letra1">
+      Equilibrium #3429
+    </p>
+    <p class="letra2">
+      Our Equilibrium collection promotes balance and calm.
+    </p>
+    <div class="textos">
+      <div class="textos_contenido1">
+        <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+        <p class="textos_contenido1_letra1">
+          0.041  ETH
+        </p>
+      </div>
+      <div class="textos_contenido2">
+        <svg class="icon1" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+        <p class="textos_contenido2_letra2">
+          3 days left
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="creador">
+      <img class="avatar" src="../images/image-avatar.png">
+      <p class="letra3">
+        Creation of  <label>Jules Wyvern</label>
+      </p>
+      
+    </div>
   </div>
+      
 </body>
 </html>
